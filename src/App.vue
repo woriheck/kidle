@@ -41,7 +41,7 @@ import { randomElement } from './js/helper'
 // game setup
 // Grab a random word from secret list
 const word = randomElement(secret);
-const guessAllowed = word.length
+const guessAllowed = word.length + 1
 
 let board = reactive(
   Array.from({length: guessAllowed}, () => {

@@ -1,8 +1,8 @@
-# Birdle
+# kidle
 Clone of wordle game
 
 # Demo
-https://woriheck.github.io/birdle/
+https://kidle.erikchow.app
 
 ## Recommended IDE Setup
 

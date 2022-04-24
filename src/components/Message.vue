@@ -1,8 +1,8 @@
 <template>
   <div class="flex">
       <div @click="askBird" class="-ml-20">
-        <img v-if="state === 'cheat'" src="../assets/cheat_bird.png" width="40" alt="">
-        <img v-else src="../assets/bird.png" width="40" alt="">
+        <img v-if="state === 'cheat'" src="../assets/teddy.png" width="40" alt="">
+        <img v-else src="../assets/pacifier.png" width="30" alt="">
       </div>
 
       <div :class="bubblePosition" class="absolute -ml-10 text-white text-sm bg-gray-300/25 px-2.5 py-1 rounded">
@@ -75,13 +75,13 @@ let message = computed(() => {
     }
 
     return  `
-      Congrats, You win! <br>You just wasted <br> ${gameTime()} in birdle.
+      Congrats, You win! <br>You just wasted <br> ${gameTime()} in kidle.
     `
   }
 
   if (props.state === 'lose') {
     return  `
-      The words is "${props.word}"<br>You just wasted  ${gameTime()} <br> in birdle.
+      The words is "${props.word}"<br>You just wasted  ${gameTime()} <br> in kidle.
     `
   }
 
@@ -151,7 +151,7 @@ let message = computed(() => {
   }
 
   return `
-    Welcome to birdle! <br>
+    Welcome to kidle! <br>
     Try to guess my word.
   `
 })
